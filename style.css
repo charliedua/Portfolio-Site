@@ -1,0 +1,65 @@
+.navbar.transparent.navbar-inverse .navbar-inner 
+{
+    background: rgba(0,0,0,0.4);
+}
+
+body, html 
+{
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+
+#name 
+{
+    font-family: 'Mali', cursive;
+    font-size: 5em;
+    text-align: center;
+    margin-right: 60%;
+    top: 30%;
+    position: relative;
+}
+
+.nav-main
+{
+    padding-top: 10px;
+    float: right;
+    margin-right: 3%;
+    margin-top: 10px;
+}
+
+.nav-main ul li
+{
+    font-size: 1.1em;   
+    text-transform: uppercase;
+    list-style: none;
+    display: inline;
+    padding-left: 20px;
+}
+
+
+.nav-main ul li a
+{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-main ul li a:hover
+{
+    border-bottom: solid 1px black;
+}
+
+#content
+{
+    background-image: url('./Images/Background.jpg');
+
+    height: 100%;
+
+
+    position: relative;
+    opacity: 0.65;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
