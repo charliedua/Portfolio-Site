@@ -31,23 +31,32 @@ body, html
 
 .nav-main ul li
 {
+    display: inline;
     font-size: 1.1em;   
     text-transform: uppercase;
     list-style: none;
-    display: inline;
     padding-left: 20px;
 }
 
+.nav-item-underline
+{
+    width: 0px;
+    color: black;
+    height: 5px;
+    transition: width 350ms ease-in;
+}
+
+/* On hover of a changes the width of underline */
+.nav-main ul li a:hover + .nav-item-underline
+{
+    width: 100%;
+}
 
 .nav-main ul li a
 {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.8);
-}
-
-.nav-main ul li a:hover
-{
-    border-bottom: solid 1px black;
+    display: inline;
 }
 
 #content
@@ -55,7 +64,6 @@ body, html
     background-image: url('./Images/Background.jpg');
 
     height: 100%;
-
 
     position: relative;
     opacity: 0.65;
