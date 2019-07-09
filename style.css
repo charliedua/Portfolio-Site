@@ -13,29 +13,32 @@ body, html
     font-family: 'Mali', cursive;
     font-size: 5em;
     margin-left: 7%;
-    position: relative;
-    margin-top: 10%;
     color: rgba(0, 0, 0, 0.9);
+    /* position: absolute  ; */
+    margin-top: 10%;
 }
 
 
 #text
 {
     width: 25%;
+    margin-top: 30px;
     text-align: left;
-    margin-left: 5%;
-    margin-right: 4%;
-    float: right;
-    text-align: left;
+    margin-left: 7%;
+    text-align: center;
     color: rgba(0, 0, 0, 0.9);
     font-size: 1.1em;
 }
 
+#text span
+{
+    display: block;
+}
+
 .nav-main
 {
-    padding-top: 2%;
-    margin-right: 3%;
-    margin-top: 0px;
+    padding-top: 1.75%;
+    position: fixed;
 }
 
 .nav-main ul .left
@@ -72,20 +75,24 @@ body, html
     width: 100%;
 }
 
+.nav-main ul
+{
+    text-align: center;
+}
+
 .nav-main ul li a
 {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.8);
-    display: inline;
 }
 
 #content
 {
     background-image: url('./Images/Background.jpg');
-
+    overflow: hidden;
     height: 100%;
     margin: 0;
-    position: relative ;
+    position: sticky;
     opacity: 0.70;
     background-position: top;
     background-repeat: no-repeat;
@@ -98,27 +105,21 @@ body, html
     background-color:rgba(0, 0, 0, 0.1);
     font-size:15px;
     color:#737373;
-    position: fixed;
-    bottom: 0px;
     width: 100%;
+    bottom: 0;
+    position: absolute;
 }
+
 
 .site-footer .social-icons
 {
     text-align:right;
-    position: fixed;
     right: 10px;
-    bottom: 0px;
     margin-top: 4px;
     padding-left:0;
     margin-bottom:0;
     list-style:none;
     display:inline-block;
-}
-
-.site-footer .social-icons a
-{
-
 }
 
 .copyright-text
@@ -192,6 +193,7 @@ body, html
         width: 80%;
         text-align: center
     }
+    
     .nav-main li:first-child
     {
         float: left;
