@@ -54,7 +54,7 @@ body, html
 .nav-main ul li
 {
     display: inline-block;
-    font-size: 1.5em;   
+    font-size: 1.5em;
     text-transform: uppercase;
     list-style: none;
     padding-left: 20px;
@@ -182,25 +182,34 @@ body, html
 
 @media (max-width:767px)
 {
+  
     #name
     {
+        display: inline-block;
         font-size: 3.5em;
-        width: 80%; 
-        text-align: center
+        width: 80%;
+        text-align: center;
+        margin-bottom: 0px;
     }
 
     #text
     {
-        float: left;
         width: 80%;
         text-align: center
     }
-    
-    .nav-main li:first-child
-    {
-        float: left;
-    }
 
+    .nav-main ul
+    {
+        margin-bottom: 0px;
+        padding-left: 0px;
+    }
+    
+    .nav-main 
+    {
+        position: initial;
+        text-align: center;
+    }
+    
     .site-footer .copyright-text,.site-footer .social-icons
     {
         text-align:center
@@ -209,5 +218,39 @@ body, html
     .site-footer .social-icons a
     {
         margin-left: 1px;
+    }
+
+    .site-footer
+    {
+        text-align: center;
+    }
+
+    .site-footer .social-icons
+    {
+        position: initial;
+        display: block;
+    }
+
+    .social-icons a:active,.social-icons a:focus,.social-icons a
+    {
+        color:#fff;
+        background-color:#29aafe
+    }
+
+    .social-icons a.facebook
+    {
+        background-color:#3b5998
+    }
+    .social-icons a.instagram
+    {
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    }
+    .social-icons a.linkedin
+    {
+        background-color:#007bb6
+    }
+    .social-icons a.github
+    {
+        background-color:black
     }
 }
