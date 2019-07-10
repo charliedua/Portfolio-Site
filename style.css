@@ -190,12 +190,16 @@ body, html
         width: 80%;
         text-align: center;
         margin-bottom: 0px;
+        background: #fff;
+        border-radius: 10px;
     }
 
     #text
     {
-        width: 80%;
-        text-align: center
+        margin-left: 0;
+        width: 100%;
+        background: #C6A68F;
+        text-align: center;
     }
 
     .nav-main ul
