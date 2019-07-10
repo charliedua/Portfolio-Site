@@ -176,7 +176,8 @@ body,html
   background-color:#000;
 }
 
-@media max-width767px {
+@media (max-width:767px)
+{
   #name
   {
     display:inline-block;
