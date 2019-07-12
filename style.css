@@ -1,3 +1,12 @@
+*
+{
+    -moz-transition: all 1s ease-in-out, left 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out, left 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out, left 1s ease-in-out;
+    -o-transition: all 1s ease-in-out, left 1s ease-in-out;
+    transition: all 1s ease-in-out, left 1s ease-in-out;
+}
+
 body,html
 {
   height:100%;
@@ -95,6 +104,30 @@ body,html
   background-repeat:no-repeat;
   background-size:cover;
   margin:0;
+}
+
+
+.form-container
+{
+	width: fit-content;
+  height: fit-content;
+  padding: 2%;
+	
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	
+  margin: auto;
+  
+  background: #C6A68F;
+  border-radius: 10px;
+}
+
+.form
+{
+  text-align: center;
 }
 
 .site-footer
