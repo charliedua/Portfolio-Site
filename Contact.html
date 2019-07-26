@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contact</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+
+
+    <!-- Dependency #FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Dependency #Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Mali&display=swap" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+    <!-- Dependency #JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <!-- Marker for Top -->
+    <span id="TOP"></span>
+
+    <div id="content">
+        <!-- Navigation -->
+        <nav class="nav-main">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                    <hr class="nav-item-underline" />
+                </li>
+                <!-- https://forms.gle/CfY7YfUHkwgMu1GNA -->
+                <li>
+                    <a href="#TOP">
+                        Contact
+                    </a>
+                    <hr class="nav-item-underline" />
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Write Content Here -->
+        <div class="form-container">
+            <form class="form" action="https://localhost:5001/api/form/" method="POST">
+                <input id="form-name" placeholder="Name" name="name" type="text" /><br />
+                <input id="form-email" placeholder="Email" name="email" type="email" /><br />
+                <textarea name="comment" placeholder="Comment" rows="10"></textarea><br />
+                <input id="form-email" value="Submit" type="submit" /><br />
+            </form>
+            <span style="display:none;">Your data has been sent!</span>
+        </div>
+
+        <!-- Footer Start -->
+        <div class="site-footer">
+            <p class="copyright-text">
+                Copyright &copy; 2017 All Rights Reserved by
+                <a href="https://github.com/charliedua">Anmol Dua</a>.
+            </p>
+
+            <ul class="social-icons">
+                <li>
+                    <a class="facebook" href="https://www.facebook.com/charli.dua"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a class="instagram" href="https://www.instagram.com/charlie_dua/"><i
+                            class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a class="github" href="https://github.com/charliedua"><i class="fa fa-github"></i></a>
+                </li>
+                <li>
+                    <a class="linkedin" href="https://www.linkedin.com/in/anmol-dua/"><i class="fa fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

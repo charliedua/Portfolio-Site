@@ -109,10 +109,11 @@ body,html
 
 .form-container
 {
-	width: fit-content;
-  height: fit-content;
-  padding: 2%;
-	
+	width: 60%;
+  height: 35%;
+  padding: 5% 0;
+  
+
 	position: absolute;
 	top:0;
 	bottom: 0;
@@ -123,6 +124,26 @@ body,html
   
   background: #C6A68F;
   border-radius: 10px;
+}
+
+.form-container input, .form-container textarea
+{
+  width: 80%;
+  height: 2rem;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 1.25em;
+}
+
+.form-container input[type='submit']
+{
+  width: 20%;
+  height: 4rem;
+  font-size: 2em;
+}
+.form-container textarea
+{
+  height: 10rem;
 }
 
 .form
