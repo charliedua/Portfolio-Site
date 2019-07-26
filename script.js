@@ -1,4 +1,7 @@
-$(document).ready(function() {
+// This code is commented because the api is not hosted yet
+// untill the api is hosted the user is redirected to google forms.
+
+/* $(document).ready(function() {
 
     // process the form
     $('form').submit(function(event) {
@@ -30,3 +33,4 @@ $(document).ready(function() {
         event.preventDefault();
     });
 });
+*/
