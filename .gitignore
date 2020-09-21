@@ -1,4 +1,5 @@
 *.bak.jpeg
+.vscode
 url.config
 bin
 obj
